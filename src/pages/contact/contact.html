@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contacto
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-list>
+    <ion-list-header>Sígueme en Twitter</ion-list-header>
+    <ion-item>
+      <ion-icon name="logo-twitter" item-start></ion-icon>
+      @_PsYcHoSpHeRe_
+    </ion-item>
+  </ion-list>
+
+  <form [formGroup]="miFormulario" (ngSubmit)="guardarDatos()">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" item-start></ion-icon>
+        <ion-label stacked>Nombre:</ion-label>
+        <ion-input formControlName="nombre" type="text" placeholder="Nombre"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="mail" item-start></ion-icon>
+        <ion-label stacked>Correo Electrónico:</ion-label>
+        <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="share-alt" item-start></ion-icon>
+        <ion-label stacked>Asunto:</ion-label>
+        <ion-input formControlName="asunto" type="text" placeholder="Asunto"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="text" item-start></ion-icon>
+        <ion-label stacked>Mensaje:</ion-label>
+        <ion-input formControlName="mensaje" type="text" placeholder="Mensaje"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!miFormulario.valid">Enviar</button>
+    </div>
+  </form>
+</ion-content>

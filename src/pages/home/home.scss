@@ -1,0 +1,106 @@
+page-home {
+
+  h5 {
+    font-size: 10px !important;
+  }
+
+
+  ion-navbar .toolbar-background, .toolbar-background {
+    background: color($colors, primary) !important;
+    border: none !important;
+    color: white;
+  }
+
+
+  .toolbar-content {
+    height: 50px;
+  }
+
+
+  .newsearch .searchbar .searchbar-input {
+    color: color($colors, primary) !important;
+    letter-spacing: 1px;
+    font-weight: bold;
+    min-height: 43px;
+    //background-image: url('../assets/img/logo/logo-new.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
+
+
+  .newsearch .searchbar button {
+    right: 0px;
+  }
+
+
+  .searchbar-input {
+    background-color: white;
+  }
+
+
+  .searchbar-input-container {
+    overflow: hidden;
+    float: left;
+    margin-bottom: 5px;
+  }
+
+
+  .icon-left-header {
+    text-align: left;
+    margin-right: 15px;
+  }  
+
+
+  .swiper-slide img {
+    width: 100%;
+  }
+
+
+  ion-slides:first-child {
+    height: 64vw;
+  }
+
+
+  .background-image {
+    height: 64vw;
+  }
+
+
+  .main-content {
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+  }
+
+
+  ion-slides .title-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: table;
+  }
+
+
+  ion-slides .title-container .title {
+    display: table-cell;
+    vertical-align: middle;
+
+    color: white;
+  }
+
+  ion-slides .title-container .title h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    width: 60%;
+    margin: 0 auto;
+
+    background-color: black;
+  }
+
+  ion-slides .title-container .title h1 {
+
+  }
+}
